@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <table class="container">
+        <form action="" method="get">
+            <figcaption><img src="astronaut.png" alt="image" height="200px"></figcaption>
+            <thead>
+                <tr>
+                    <th>Cadastro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name">Nome:</label><br>
+                        <input type="text" id="name">
+                    </td>
+                    <td>
+                        <label for="name">Sobrenome:</label><br>
+                        <input type="text" id="name">
+                    </td>
+                    <td>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Nome do Pai:</label><br>
+                        <input type="text" id="name">
+                    </td>
+                    <td>
+                        <label for="name">Nome da Mãe:</label><br>
+                        <input type="text" id="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="registration">Data de Ingresso:</label><br>
+                        <input type="date" id="registration">
+                    </td>
+                    <td>
+                        <label for="birthdate">Data de Nascimento:</label><br>
+                        <input type="date" id="birthdate">
+                    </td>
+                    <td>
+                        <label name="sexo"> Gênero:</label><br>
+                        <label for="female"> Feminino</label>
+                        <input type="radio" id="yes" name="sexo">
+                        <label for="male"> Masculino</label>
+                        <input type="radio" id="no" name="sexo" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="estado">Estado:</label><br>
+                        <select id="estado" name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="address">Logradouro:</label><br>
+                        <input type="text" id="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="perfil">Você é:</label><br>
+                        <select name="perfil" id="perfil">
+                            <option value="">Selecione</option>
+                            <option value="Masculino">Estudante</option>
+                            <option value="Feminino">Professor</option>
+                        </select>
+                    </td>
+                    <td>                        
+                        <label for="curso">Curso:</label><br>
+                        <select id="curso" name="curso">
+                            <option value="ads">ADS</option>
+                        </select></td>
+                    <td>
+                        <label for="materia">Materia:</label><br>
+                        <select id="materia" name="materia">
+                            <option value="desenvolvimento">Desenvolvimento I</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" placeholder="nome@dominio.com">
+                    </td>
+                    <td>
+                        <label for="tel">Cel:</label><br>
+                        <input type="tel" id="telephone" placeholder="(00) 00000-0000">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Senha:</label><br>
+                        <input type="password" id="password" pattern="^.{6,10}$" title="A senha deve conter no mínimo 6 caracteres e máximo 10" maxlength="14" required>
+                    </td>
+                    <td>
+                        <label for="passwordconfirm">Confirme sua senha:</label><br>
+                        <input type="password" id="passwordconfirm" pattern="^.{6,10}$" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="contactus">Entre em Contato:</label><br>
+                        <textarea id="contactus" name="contact" rows="5" cols="33" fixed>Escreva sua mensagem...
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="check" checked>
+                        <label for="check">Aceito receber novidades por Email.</label><br>
+                        <input type="checkbox" id="check" checked>
+                        <label for="check">Aceito os termos de serviço e a política de privacidade</label>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <button type="submit" form="name">Continue</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </form>
+    </table>
+</body>
+</html>
